@@ -20,5 +20,6 @@ typedef struct map {
 
 void map_info(map*);
 map *generate_map(FILE *f, int, int, int);
-
+floor getStartFloor(map *m);
+int * getMinimumPathMap(map *m);
 #endif // MAP

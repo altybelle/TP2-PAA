@@ -28,9 +28,8 @@ int main() {
 int start(FILE *f) {
     int height, width, time_wasted, lava_progression;
     fscanf(f, "%d %d %d %d", &height, &width, &time_wasted, &lava_progression);
-
     map m = *generate_map(f, height, width, lava_progression);
     map_info(&m);
-
+    getMinimumPathMap(&m);
     return 0;
 }
